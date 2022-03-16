@@ -56,6 +56,10 @@ namespace IR
             {
                 INSS = salario * (14.0 / 100);
             }
+            else if (salario > 6433.57)
+            {
+                INSS = (751.99);
+            }
             
                 DisplayAlert("Calculo", string.Format("Salario: {0} \n IRRF : {1} \n INSS :{2}", salario, IRRF, INSS), "OK");
         }
